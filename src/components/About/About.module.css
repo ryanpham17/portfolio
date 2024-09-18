@@ -1,0 +1,126 @@
+@import '../../vars.css';
+
+#about {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+}
+
+.title1 {
+    padding-top: 8%;
+    text-align: center;
+}
+
+.title2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.aboutContainer {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: flex;
+}
+
+.imageContainer {
+    flex: 0 0 30%;
+    margin-right: 20px; 
+}
+
+.aboutImg {
+    margin-left: 30%;
+    border-radius: 8%;
+    width: 100%;
+    height: auto;
+}
+
+.aboutDetailsContainer {
+    display: relative;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.mainDetailsContainer {
+    padding-top: 6%;
+    display: flex;
+    margin-right:8%
+}
+
+.detailsContainer {
+    align-items: center;
+    margin-right: 18%;
+}
+
+.textContainer {
+    font-size: 110%;
+    padding-top: 4%;
+    text-align: left;
+    align-self: center;
+    margin-left: 18%;
+    width: 60%; 
+    line-height: 1.9;
+}
+
+@media (max-width: 830px) {
+    .aboutContainer {
+        flex-direction: column;
+    }
+    .imageContainer {
+        width: 63%;
+        margin-bottom: 20px;
+    }
+    .textContainer {
+        text-align: center;
+        padding-left: 5%;
+    }
+    .mainDetailsContainer {
+        padding-left: 5%;
+    }
+}
+
+.detailsContainer1 {
+    line-height: 1.4;
+    padding: 1.5rem;
+    flex: 0.4;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.2rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.detailsContainer2 {
+    margin-left: 3%;
+    line-height: 1.4;
+    padding: 1.5rem;
+    flex: 0.4;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.2rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+}
+
+.educationIcon,
+.experienceIcon {
+    width: 12%;
+    height: auto;
+}
+
+
+
+

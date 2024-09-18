@@ -1,0 +1,11 @@
+:root {
+    --color-text: #ffffff;
+    --color-textBlack: #000000;
+    --color-textGrey: #4e4e4e;
+    --color-primary: #576cbc;
+    --color-secondary: #19376d;
+    --color-dark: #0b2447;
+    --color-bg: #04152d;
+
+    --font-figtree: "figtree";
+}

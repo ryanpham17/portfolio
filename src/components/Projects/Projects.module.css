@@ -1,0 +1,21 @@
+@import '../../vars.css';
+
+.spacer {
+    padding-top: 9%;
+}
+
+.title1 {
+    text-align: center;
+}
+
+.title2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.projectsContainer p {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

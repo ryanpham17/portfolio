@@ -1,0 +1,78 @@
+@import '../../vars.css';
+
+.experienceSubTitle {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.experienceDetailsContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.spacer {
+    padding-top: 9%;
+}
+
+.title1 {
+    text-align: center;
+}
+
+.title2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.checkmarkImg {
+    height: 2rem;
+}
+
+.detailsContainer {
+    line-height: 1.4;
+    padding: 1.5rem;
+    flex: 0.4;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.2rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.articleContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+article {
+    padding-left: 8%;
+    display: flex;
+    width: 15rem;
+    justify-content: left;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 10px;
+    margin: 0 12px;
+}
+
+
+.aboutContainer {
+    gap: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center; 
+}
+
+@media (max-width: 830px) {
+    .aboutContainer {
+        flex-direction: column;
+        padding-top: 4%;
+        margin: 0 22px;
+    }
+}
