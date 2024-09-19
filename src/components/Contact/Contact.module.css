@@ -41,6 +41,7 @@
 }
 
 .contactContainer p {
+    padding-top: 20px;
     font: var(--font-figtree);
     font-size: larger;
     text-decoration: none;
