@@ -13,7 +13,7 @@ export const Contact = () => {
         <div className={styles.contactContainer}>
             <img src={getImageURL("contact/email.png")} alt="email-icon" className={styles.emailIcon}/>
             <p className={styles.gmail}>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rpham817@gmail.com" target="_blank">rpham817@gmail.com</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ryandphambusiness@gmail.com" target="_blank">rpham817@gmail.com</a>
             </p>
         </div>
         <div className={styles.contactContainer}>
