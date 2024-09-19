@@ -20,6 +20,15 @@
     align-items: center;
 }
 
+
+.cardContainer{
+    padding: 2.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
 @media (max-width: 830px) {
     .spacer{
         padding-top: 120px;
