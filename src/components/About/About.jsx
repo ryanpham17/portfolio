@@ -20,7 +20,7 @@ export const About = () => {
                     <div className={styles.detailsContainer1}>
                         <img src={getImageURL("about/experience.png")} alt="experience-icon" className={styles.experienceIcon}/>
                         <h3 className={styles.experience}>Experience</h3>
-                        <p className={styles.experienceDescription}>N/A <br /> Software Engineer</p>
+                        <p className={styles.experienceDescription}>N/A <br /> Software Development Engineer</p>
                     </div>
                     <div className={styles.detailsContainer2}>
                         <img src={getImageURL("about/education.png")} alt="education-icon" className={styles.educationIcon}/>

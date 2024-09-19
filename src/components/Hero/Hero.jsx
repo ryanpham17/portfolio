@@ -11,7 +11,7 @@ export const Hero = () => {
       <div className={styles.content}>
         <p className={styles.text1}>Hello, I'm</p>
         <h1 className={styles.title}>Ryan Pham</h1>
-        <p className={styles.description}>Software Developer Engineer</p>
+        <p className={styles.description}>Software Development Engineer</p>
         <div className={styles.BtnContainer}>
           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ryandphambusiness@gmail.com" target="_blank" rel="noopener noreferrer" className={styles.contactBtn}>Contact Me</a>
           <a href={Pdf} target="_blank" rel="noopener noreferrer" className={styles.contactBtn}>Resume</a>
