@@ -70,6 +70,9 @@ article {
 }
 
 @media (max-width: 830px) {
+    .spacer{
+        padding-top: 120px;
+    }
     .aboutContainer {
         flex-direction: column;
         padding-top: 4%;

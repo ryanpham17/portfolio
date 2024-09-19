@@ -70,6 +70,12 @@
 }
 
 @media (max-width: 900px) {
+    .title1{
+        padding-top: 120px;
+    }
+    .sectionContainer{
+        padding-top: 20px;
+    }
     .aboutContainer {
         flex-direction: column;
     }

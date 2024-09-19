@@ -19,3 +19,9 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 830px) {
+    .spacer{
+        padding-top: 120px;
+    }
+}

@@ -66,6 +66,9 @@
 }
 
 @media screen and (max-width: 1000px) {
+    .title{
+        text-decoration: none;
+    }
     .stickyBar {
         background-color: white;
     }

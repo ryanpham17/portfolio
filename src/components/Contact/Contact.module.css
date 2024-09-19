@@ -69,6 +69,10 @@
 }
 
 @media (max-width: 1000px) {
+    .spacer{
+        padding-top: 120px;
+    }
+    
     .contactContainerOuter {
         flex-direction: column; 
         width: 90%; 
