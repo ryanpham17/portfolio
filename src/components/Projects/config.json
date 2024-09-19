@@ -8,21 +8,21 @@
     },
     {
         "title": "AniSim",
-        "text": "React.js, Bootstrap, and CSS for the frontend and Node.js with Express.js and JavaScript for the backend, including user login. MySQL manages authentication. For NLP, I’m using Hugging Face’s transformers library in Python to analyze anime titles, integrating it with data from the AniList API.",
+        "text": "Used React.js, Bootstrap, and CSS for the frontend and Node.js with Express.js and JavaScript for the backend, including user login. MySQL manages authentication. For NLP, I’m using Hugging Face’s transformers library in Python to analyze anime titles, integrating it with data from the AniList API.",
         "image": "anisim",
         "link": "https://github.com/ryanpham17/AniSim",
         "button": "Link"
     },
     {
         "title": "Valentine Website",
-        "text": "Create a Valentine's site with JavaScript, HTML, and CSS where hovering over the 'No' button makes it move away from the cursor.",
+        "text": "Created a Valentine's site with JavaScript, HTML, and CSS where hovering over the 'No' button makes it move away from the cursor.",
         "image": "valentine",
         "link": "https://github.com/ryanpham17/ValentinesSite",
         "button": "Link"
     },
     {
         "title": "ZotEvents",
-        "text": "Uses Selenium to scrape UCI Events page. Applies the Google Maps API to make finding UCI event locations easier. Uses React.JS and CSS for front end, and JavaScript for backend.",
+        "text": "Used Selenium to scrape UCI Events page. Applies the Google Maps API to make finding UCI event locations easier. Uses React.JS and CSS for front end, and JavaScript for backend.",
         "image": "ZotEvents",
         "button": "Private"
     }
