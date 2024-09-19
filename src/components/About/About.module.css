@@ -78,7 +78,24 @@
         margin-bottom: 20px;
     }
     .textContainer {
+        padding-left: 5%;
         text-align: center;
+    }
+    .mainDetailsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center; 
+        width: 100%;
+        padding: 0 27px;
+        box-sizing: border-box;
+    }  
+    .detailsContainer1,
+    .detailsContainer2 {
+        width: 100%; 
+        max-width: 300px; 
+        margin-bottom: 20px; 
+        box-sizing: border-box;
     }
 }
 
