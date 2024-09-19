@@ -17,7 +17,7 @@ export const Projects = () => {
         {cardArr.map((eachCard, index) => (
           <div className="card" style={{ width: '18rem' }} key={index}>
             <img
-              src={`/assets/projects/${eachCard.image}.png`} className="card-img-top" alt={eachCard.title}
+              src={getImageURL(`projects/${eachCard.image}.png`)} className="card-img-top" alt={eachCard.title}
             />
             <div className="card-body">
               <h5 className="card-title">{eachCard.title}</h5>
