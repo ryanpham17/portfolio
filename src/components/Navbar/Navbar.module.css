@@ -93,8 +93,11 @@
         cursor: pointer;
     }
 
-    .menuItems {
+    .menuOpen{
         text-decoration: none;
+    }
+
+    .menuItems {
         display: none;
         flex-direction: column;
         align-items: center;
