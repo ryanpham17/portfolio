@@ -29,7 +29,7 @@ export const About = () => {
                     </div>
                 </div>
                 <div>
-                    <p className={styles.textContainer}>Hello, I am Ryan Pham, a second year Computer Science major at California State Polytechnic University, Pomona. I am actively looking for Summer internship opportunities. I enjoy participating in Hackathons and developing my technical skillset whatever way possible.</p>
+                    <p className={styles.textContainer}>Hello, I am Ryan Pham, a third year Computer Science major at California State Polytechnic University, Pomona. I am actively looking for Summer internship opportunities. I enjoy participating in Hackathons and developing my technical skillset whatever way possible.</p>
                 </div>
             </div>
         </div>

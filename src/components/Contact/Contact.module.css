@@ -67,3 +67,22 @@
     width: 20%;
     height: auto;
 }
+
+@media (max-width: 1000px) {
+    .contactContainerOuter {
+        flex-direction: column; 
+        width: 90%; 
+    }
+
+    .contactContainer .icon,
+    .contactContainer .emailIcon {
+        width: 55px; /* Adjust size for smaller screens if needed */
+    }
+}
+
+@media (max-width: 600px) {
+    .contactContainer {
+        flex-direction: column; 
+        align-items: center; 
+    }
+}
