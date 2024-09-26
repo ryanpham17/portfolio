@@ -76,6 +76,18 @@ export const Experience = () => {
             <article>
               <img src={getImageURL("experience/checkmark.png")} alt="checkmarkIcon" className={styles.checkmarkImg}/>
               <div>
+                <h3>Node.js</h3>
+              </div>
+            </article>
+            <article>
+              <img src={getImageURL("experience/checkmark.png")} alt="checkmarkIcon" className={styles.checkmarkImg}/>
+              <div>
+                <h3>Express.js</h3>
+              </div>
+            </article>
+            <article>
+              <img src={getImageURL("experience/checkmark.png")} alt="checkmarkIcon" className={styles.checkmarkImg}/>
+              <div>
                 <h3>MongoDB</h3>
               </div>
             </article>
