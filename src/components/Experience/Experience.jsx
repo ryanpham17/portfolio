@@ -94,7 +94,7 @@ export const Experience = () => {
             <article>
               <img src={getImageURL("experience/checkmark.png")} alt="checkmarkIcon" className={styles.checkmarkImg}/>
               <div>
-                <h3>TensorFlow</h3>
+                <h3>Bootstrap</h3>
               </div>
             </article>
             <article>
