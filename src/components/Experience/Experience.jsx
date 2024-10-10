@@ -115,6 +115,18 @@ export const Experience = () => {
                 <h3>Git</h3>
               </div>
             </article>
+            <article>
+              <img src={getImageURL("experience/checkmark.png")} alt="checkmarkIcon" className={styles.checkmarkImg}/>
+              <div>
+                <h3>Postman</h3>
+              </div>
+            </article>
+            <article>
+              <img src={getImageURL("experience/checkmark.png")} alt="checkmarkIcon" className={styles.checkmarkImg}/>
+              <div>
+                <h3>Flutter</h3>
+              </div>
+            </article>
           </div>
         </div>
       </div>
