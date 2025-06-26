@@ -7,7 +7,7 @@
         "button": "Link"
     },
     {
-        "title": "AniSim",
+        "title": "AniSim (In Progress)",
         "text": "Used React.js, Bootstrap, and CSS for the frontend and Node.js with Express.js and JavaScript for the backend, including user login. MySQL manages authentication. For NLP, I’m using Hugging Face’s transformers library in Python to analyze anime titles, integrating it with data from the AniList API.",
         "image": "anisim",
         "link": "https://github.com/ryanpham17/AniSim",
@@ -22,8 +22,16 @@
     },
     {
         "title": "ZotEvents",
-        "text": "Used Selenium to scrape UCI Events page. Applies the Google Maps API to make finding UCI event locations easier. Uses React.JS and CSS for front end, and JavaScript for backend.",
+        "text": "Used Selenium to scrape UCI Events page. Applies the Google Maps API to make finding UCI event locations easier. Uses React.js and CSS for front end, and JavaScript for backend.",
         "image": "ZotEvents",
-        "button": "Private"
+        "link": "https://github.com/ryanpham17/IrvineHacks-Project",
+        "button": "Link"
+    },
+    {
+        "title": "Buzzr",
+        "text": "This code creates a Discord bot using JavaScript, Node.js, and Discord.js to manage SMS notifications via the Twilio API. It uses SQLite for data storage and is currently handling a sports betting server with over 1,000 members, ensuring efficient and scalable communication.",
+        "image": "Buzzr",
+        "link": "https://github.com/ryanpham17/Buzzr",
+        "button": "Link"
     }
 ]
