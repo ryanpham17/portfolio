@@ -29,7 +29,7 @@ export const About = () => {
                     </div>
                 </div>
                 <div>
-                    <p className={styles.textContainer}>Hi, I'm Ryan Pham, a fourth-year Computer Science student at California State Polytechnic University, Pomona. I enjoy building software across AI, machine learning, full-stack development, and embedded systems. After earning my bachelor's degree, I plan to pursue a master's in Computer Science with a focus on machine learning. I'm currently seeking internship and full-time software engineering opportunities where I can continue learning, solve meaningful problems, and contribute to impactful projects.</p>
+                    <p className={styles.textContainer}>Hi, I'm Ryan Pham, a Computer Science student at California State Polytechnic University, Pomona. I enjoy building software across AI, machine learning, full-stack development, and embedded systems. After earning my bachelor's degree, I plan to pursue a master's in Computer Science with a focus on machine learning. I'm currently seeking internship and full-time software engineering opportunities where I can continue learning, solve meaningful problems, and contribute to impactful projects.</p>
                 </div>
             </div>
         </div>
