@@ -1,0 +1,33 @@
+[
+    {
+        "title": "Languages",
+        "skills": [
+            "Python",
+            "Java",
+            "C++",
+            "C#",
+            "JavaScript",
+            "TypeScript",
+            "SQL"
+        ]
+    },
+    {
+        "title": "Frameworks",
+        "skills": [
+            "React",
+            "Node.js",
+            "Express.js",
+            "FastAPI",
+            "Spring Boot"
+        ]
+    },
+    {
+        "title": "Tools & Databases",
+        "skills": [
+            "Git",
+            "MongoDB",
+            "PostgreSQL",
+            "Selenium"
+        ]
+    }
+]

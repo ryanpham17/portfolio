@@ -1,19 +1,5 @@
 @import '../../vars.css';
 
-.experienceSubTitle {
-    color: rgb(85, 85, 85);
-    font-weight: 600;
-    font-size: 1.75rem;
-    margin-bottom: 2rem;
-}
-
-.experienceDetailsContainer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center; 
-}
-
 .spacer {
     padding-top: 9%;
 }
@@ -27,54 +13,58 @@
     text-align: center;
 }
 
-.checkmarkImg {
-    height: 2rem;
-}
-
-.detailsContainer {
-    line-height: 1.4;
-    padding: 1.5rem;
-    flex: 0.4;
-    background: white;
-    border-radius: 2rem;
-    border: rgb(163, 163, 163) 0.2rem solid;
-    text-align: center;
-}
-
-.articleContainer {
+.cardContainer {
+    padding: 2.8rem;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
 }
 
-article {
-    padding-left: 8%;
+.card {
+    width: 22rem;
+    height: 28rem;
+    border: rgb(163, 163, 163) 0.2rem solid;
+    border-radius: 1rem;
+    background: white;
     display: flex;
-    width: 15rem;
-    justify-content: left;
-    align-items: center;
-    gap: 0.5rem;
-    padding-bottom: 10px;
-    margin: 0 12px;
+    flex-direction: column;
+    padding: 2rem;
 }
 
-
-.aboutContainer {
-    gap: 5rem;
+.cardTitle {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
     margin-bottom: 2rem;
-    margin-top: 2rem;
+}
+
+.skillList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center; 
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+}
+
+.skillItem {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.35rem;
+}
+
+.checkmarkImg {
+    height: 2rem;
+    width: 2rem;
+    flex-shrink: 0;
 }
 
 @media (max-width: 830px) {
-    .spacer{
+    .spacer {
         padding-top: 120px;
-    }
-    .aboutContainer {
-        flex-direction: column;
-        padding-top: 4%;
-        margin: 0 22px;
     }
 }

@@ -1,136 +1,34 @@
-import React from 'react'
+import React from 'react';
 import styles from './Experience.module.css';
 import { getImageURL } from '../../utils';
+import config from './config.json';
 
 export const Experience = () => {
   return (
-    <section id = "experience">
-    <div className={styles.spacer}>
-      <p className={styles.title1}>Learn Abouy My</p>
-      <h1 className={styles.title2}>Experience</h1>
-    </div>
-    <div className={styles.experienceDetailsContainer}>
-      <div className={styles.aboutContainer}>
-        <div className={styles.detailsContainer}>
-          <h2 className={styles.experienceSubTitle}>Languages</h2>
-          <div className={styles.articleContainer}>
-            <article>
-              <img src={getImageURL("experience/checkmark.png")} alt="checkmarkIcon" className={styles.checkmarkImg}/>
-              <div>
-                <h3>HTML</h3>
-              </div>
-            </article>
-            <article>
-              <img src={getImageURL("experience/checkmark.png")} alt="checkmarkIcon" className={styles.checkmarkImg}/>
-              <div>
-                <h3>CSS</h3>
-              </div>
-            </article>
-            <article>
-              <img src={getImageURL("experience/checkmark.png")} alt="checkmarkIcon" className={styles.checkmarkImg}/>
-              <div>
-                <h3>SQL</h3>
-              </div>
-            </article>
-            <article>
-              <img src={getImageURL("experience/checkmark.png")} alt="checkmarkIcon" className={styles.checkmarkImg}/>
-              <div>
-                <h3>C#</h3>
-              </div>
-            </article>
-            <article>
-              <img src={getImageURL("experience/checkmark.png")} alt="checkmarkIcon" className={styles.checkmarkImg}/>
-              <div>
-                <h3>JavaScript</h3>
-              </div>
-            </article>
-            <article>
-              <img src={getImageURL("experience/checkmark.png")} alt="checkmarkIcon" className={styles.checkmarkImg}/>
-              <div>
-                <h3>Python</h3>
-              </div>
-            </article>
-            <article>
-              <img src={getImageURL("experience/checkmark.png")} alt="checkmarkIcon" className={styles.checkmarkImg}/>
-              <div>
-                <h3>C++</h3>
-              </div>
-            </article>
-            <article>
-              <img src={getImageURL("experience/checkmark.png")} alt="checkmarkIcon" className={styles.checkmarkImg}/>
-              <div>
-                <h3>Java</h3>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div className={styles.detailsContainer}>
-          <h2 className={styles.experienceSubTitle}>Technologies</h2>
-          <div className={styles.articleContainer}>
-            <article>
-              <img src={getImageURL("experience/checkmark.png")} alt="checkmarkIcon" className={styles.checkmarkImg}/>
-              <div>
-                <h3>React</h3>
-              </div>
-            </article>
-            <article>
-              <img src={getImageURL("experience/checkmark.png")} alt="checkmarkIcon" className={styles.checkmarkImg}/>
-              <div>
-                <h3>Node.js</h3>
-              </div>
-            </article>
-            <article>
-              <img src={getImageURL("experience/checkmark.png")} alt="checkmarkIcon" className={styles.checkmarkImg}/>
-              <div>
-                <h3>Express.js</h3>
-              </div>
-            </article>
-            <article>
-              <img src={getImageURL("experience/checkmark.png")} alt="checkmarkIcon" className={styles.checkmarkImg}/>
-              <div>
-                <h3>MongoDB</h3>
-              </div>
-            </article>
-            <article>
-              <img src={getImageURL("experience/checkmark.png")} alt="checkmarkIcon" className={styles.checkmarkImg}/>
-              <div>
-                <h3>Bootstrap</h3>
-              </div>
-            </article>
-            <article>
-              <img src={getImageURL("experience/checkmark.png")} alt="checkmarkIcon" className={styles.checkmarkImg}/>
-              <div>
-                <h3>MySQL</h3>
-              </div>
-            </article>
-            <article>
-              <img src={getImageURL("experience/checkmark.png")} alt="checkmarkIcon" className={styles.checkmarkImg}/>
-              <div>
-                <h3>Flask</h3>
-              </div>
-            </article>
-            <article>
-              <img src={getImageURL("experience/checkmark.png")} alt="checkmarkIcon" className={styles.checkmarkImg}/>
-              <div>
-                <h3>Git</h3>
-              </div>
-            </article>
-            <article>
-              <img src={getImageURL("experience/checkmark.png")} alt="checkmarkIcon" className={styles.checkmarkImg}/>
-              <div>
-                <h3>Postman</h3>
-              </div>
-            </article>
-            <article>
-              <img src={getImageURL("experience/checkmark.png")} alt="checkmarkIcon" className={styles.checkmarkImg}/>
-              <div>
-                <h3>Flutter</h3>
-              </div>
-            </article>
-          </div>
-        </div>
+    <section id="experience">
+      <div className={styles.spacer}>
+        <p className={styles.title1}>Learn About My</p>
+        <h1 className={styles.title2}>Experience</h1>
       </div>
-    </div>
+      <div className={styles.cardContainer}>
+        {config.map((category, index) => (
+          <div className={styles.card} key={index}>
+            <h2 className={styles.cardTitle}>{category.title}</h2>
+            <ul className={styles.skillList}>
+              {category.skills.map((skill, skillIndex) => (
+                <li className={styles.skillItem} key={skillIndex}>
+                  <img
+                    src={getImageURL('experience/checkmark.png')}
+                    alt=""
+                    className={styles.checkmarkImg}
+                  />
+                  <span>{skill}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
     </section>
-  )
-}
+  );
+};
