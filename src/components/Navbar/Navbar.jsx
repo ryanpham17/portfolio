@@ -8,7 +8,7 @@ export const Navbar = () => {
   return (
   <div className={styles.stickyBar}>
     <nav className = {styles.navbar}>
-    <a className = {styles.title} href="/">Home</a>
+    <a className={styles.title} href="#home">Home</a>
     <div className = {styles.menu}>
       <img className = {styles.menuBtn} src = {menuOpen ? getImageURL("nav/close.png") : getImageURL("nav/menu.png")} alt = "menu-button" onClick = {() => setMenuOpen(!menuOpen)}/>
       <ul className = {`${styles.menuItems} ${menuOpen && styles.menuOpen}`} alt = "menu-button" onClick = {() => setMenuOpen(false)}>

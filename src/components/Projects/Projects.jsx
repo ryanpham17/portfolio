@@ -15,7 +15,7 @@ export const Projects = () => {
       </div>
       <div className={styles.cardContainer}>
         {cardArr.map((eachCard, index) => (
-          <div className="card" style={{ width: '18rem' }} key={index}>
+          <div className="card" key={index}>
             <img
               src={getImageURL(`projects/${eachCard.image}.png`)} className="card-img-top" alt={eachCard.title}
             />
