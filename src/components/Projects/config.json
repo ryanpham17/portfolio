@@ -7,31 +7,24 @@
         "button": "Link"
     },
     {
-        "title": "AniSim (In Progress)",
-        "text": "Used React.js, Bootstrap, and CSS for the frontend and Node.js with Express.js and JavaScript for the backend, including user login. MySQL manages authentication. For NLP, I’m using Hugging Face’s transformers library in Python to analyze anime titles, integrating it with data from the AniList API.",
-        "image": "anisim",
-        "link": "https://github.com/ryanpham17/AniSim",
-        "button": "Link"
-    },
-    {
-        "title": "Valentine Website",
-        "text": "Created a Valentine's site with JavaScript, HTML, and CSS where hovering over the 'No' button makes it move away from the cursor.",
-        "image": "valentine",
-        "link": "https://github.com/ryanpham17/ValentinesSite",
-        "button": "Link"
-    },
-    {
-        "title": "ZotEvents",
-        "text": "Used Selenium to scrape UCI Events page. Applies the Google Maps API to make finding UCI event locations easier. Uses React.js and CSS for front end, and JavaScript for backend.",
-        "image": "ZotEvents",
-        "link": "https://github.com/ryanpham17/IrvineHacks-Project",
+        "title": "CineMatch",
+        "text": "CineMatch is a full-stack AI app that recommends movies and TV shows through chat or a quick-match form. A FastAPI backend and React frontend power the UI, while an OpenAI agent calls MCP tools to pull live TMDB data so every pick is grounded in real metadata, not model guesses.",
+        "image": "CineMatch",
+        "link": "https://github.com/ryanpham17/CineMatch",
         "button": "Link"
     },
     {
         "title": "Buzzr",
-        "text": "This code creates a Discord bot using JavaScript, Node.js, and Discord.js to manage SMS notifications via the Twilio API. It uses SQLite for data storage and is currently handling a sports betting server with over 1,000 members, ensuring efficient and scalable communication.",
+        "text": "This code creates a Discord bot using JavaScript, Node.js, and Discord.js to manage SMS notifications via the Twilio API. It uses SQLite for data storage and is currently handling a sports betting server with over 100 members, ensuring efficient and scalable communication.",
         "image": "Buzzr",
         "link": "https://github.com/ryanpham17/Buzzr",
         "button": "Link"
+    },
+    {
+        "title": "Distributed Cache",
+        "text": "",
+        "image": "",
+        "link": "",
+        "button": "In Progress"
     }
 ]
