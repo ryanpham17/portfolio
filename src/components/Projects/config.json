@@ -10,7 +10,7 @@
         "title": "CineMatch",
         "text": "CineMatch is a full-stack AI app that recommends movies and TV shows through chat or a quick-match form. A FastAPI backend and React frontend power the UI, while an OpenAI agent calls MCP tools to pull live TMDB data so every pick is grounded in real metadata, not model guesses.",
         "image": "CineMatch",
-        "link": "https://github.com/ryanpham17/CineMatch",
+        "link": "https://github.com/ryanpham17/CineMatch/tree/main/cinematch",
         "button": "Link"
     },
     {
