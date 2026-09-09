@@ -21,10 +21,10 @@
         "button": "Link"
     },
     {
-        "title": "Distributed Cache",
-        "text": "",
-        "image": "",
-        "link": "",
-        "button": "In Progress"
+        "title": "UAV Tracking System",
+        "text": "Developing a real-time UAV detection and tracking system using Python, OpenCV, YOLO, ByteTrack, React, and PostgreSQL. The system uses computer vision to track UAV trajectories, generate motion telemetry, and provide live and historical tracking data through a web dashboard.",
+        "image": "uavTrack",
+        "link": "https://github.com/ryanpham17/UAV-Tracking-System",
+        "button": "Link"
     }
 ]
