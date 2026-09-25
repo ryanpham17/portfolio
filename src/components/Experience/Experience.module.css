@@ -1,70 +1,20 @@
 @import '../../vars.css';
 
-.spacer {
-    padding-top: 9%;
-}
+#experience { margin-top: clamp(5rem, 10vw, 10rem); padding: clamp(7rem, 12vw, 11rem) 0 clamp(8rem, 13vw, 12rem); }
+.spacer { padding-top: 1rem; text-align: center; }
+.spacer::before { content: ''; display: block; width: 64px; height: 1px; margin: 0 auto 1rem; background: var(--color-border); }
+.title1 { color: var(--color-muted); font: 0.72rem var(--font-mono); letter-spacing: 0.14em; text-transform: uppercase; }
+.title2 { font-size: clamp(2.4rem, 5vw, 4.5rem); letter-spacing: -0.06em; margin-top: 1.5rem; }
+.cardContainer { padding-top: 3rem; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; max-width: 960px; margin: 0 auto; }
+.card { min-height: 290px; border: 1px solid var(--color-border); background: var(--color-surface); border-radius: 1.25rem; padding: 1.7rem; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; text-align: center; transition: border-color 180ms ease, transform 180ms ease; }
+.card:hover { border-color: var(--color-text); transform: translateY(-4px); }
+.cardHeader { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 0.65rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--color-border); margin-bottom: 1.5rem; }
+.cardNumber { color: var(--color-muted); font: 0.72rem var(--font-mono); }
+.cardTitle { color: var(--color-text); font: 0.9rem var(--font-mono); text-transform: uppercase; margin: 0; text-align: center; }
+.skillList { width: 100%; list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; align-content: flex-start; gap: 0.55rem; }
+.skillItem { color: var(--color-muted); font: 0.78rem var(--font-mono); border: 1px solid var(--color-border); border-radius: 999px; padding: 0.55rem 0.7rem; transition: color 180ms ease, background 180ms ease, border-color 180ms ease; }
+.skillItem:hover { color: var(--color-bg); background: var(--color-text); border-color: var(--color-text); }
 
-.title1 {
-    text-align: center;
-}
-
-.title2 {
-    font-size: 3rem;
-    text-align: center;
-}
-
-.cardContainer {
-    padding: 2.8rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-}
-
-.card {
-    width: 22rem;
-    height: 28rem;
-    border: rgb(163, 163, 163) 0.2rem solid;
-    border-radius: 1rem;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-}
-
-.cardTitle {
-    color: rgb(85, 85, 85);
-    font-weight: 600;
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.skillList {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    flex: 1;
-}
-
-.skillItem {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    font-size: 1.35rem;
-}
-
-.checkmarkImg {
-    height: 2rem;
-    width: 2rem;
-    flex-shrink: 0;
-}
-
-@media (max-width: 830px) {
-    .spacer {
-        padding-top: 120px;
-    }
-}
+@media (max-width: 1000px) { .cardContainer { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 700px) { .cardContainer { grid-template-columns: 1fr; max-width: 620px; } .card { min-height: auto; } }
+@media (max-width: 560px) { #experience { margin-top: 4rem; padding: 5rem 0 7rem; } .cardContainer { padding-top: 2rem; } .card { padding: 1.1rem; } }

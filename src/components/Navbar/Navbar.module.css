@@ -1,115 +1,30 @@
 @import '../../vars.css';
 
-.stickyBar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 2;
-    background-color: var(--color-text); /* Grey background color */
-    padding-bottom: 20px;
-}
+.stickyBar { position: fixed; top: 0; left: 0; width: 100%; z-index: 2; background: var(--color-navbar); border-bottom: 1px solid #171717; backdrop-filter: blur(14px); }
+.navbar { position: relative; display: flex; align-items: center; justify-content: space-between; height: 58px; z-index: 2; margin: 0 auto; width: min(1120px, calc(100% - 48px)); }
+.title { display: flex; align-items: center; height: 100%; font: 700 0.95rem/1 var(--font-mono); text-decoration: none; color: var(--color-text); }
+.title span { color: var(--color-muted); font-weight: 400; }
+.title:hover, .menuItems a:hover { color: var(--color-accent); }
+.menu { display: flex; align-items: center; height: 100%; }
+.menuToggle { order: 3; display: none; width: 2rem; height: 2rem; place-items: center; border: 0; border-radius: 0; background: transparent; cursor: pointer; padding: 0; }
+.menuBtn { display: block; width: 1.2rem; cursor: pointer; filter: invert(1); }
+.menuItems { order: 1; display: flex; align-items: center; height: 100%; gap: 1.8rem; list-style: none; font: 500 0.8rem/1 var(--font-mono); }
+.menuItems li { display: flex; align-items: center; height: 100%; }
+.menuItems a { display: flex; align-items: center; height: 100%; color: var(--color-muted); text-decoration: none; line-height: 1; padding: 0; border-bottom: 0; }
+.menuItems a:hover { color: var(--color-hover-text); border-bottom-color: transparent; }
 
-.navbar {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 45px;
-    z-index: 2;
-    margin: 0 15%;
-    background-color: var(--color-text);
-    
-}
-
-.title {
-    font-size: 30px;
-    font-weight: 500;
-    text-decoration: transparent;
-    color: var(--color-textBlack);
-}
-
-.title:hover {
-    color: grey;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    transition: color 0.4s ease;
-}
-
-.menu {
-    display: flex;
-}
-
-.menuBtn {
-    display: none;
-}
-
-.menuItems {
-    font-weight: 500;
-    display: flex;
-    gap: 47px;
-    list-style: none;
-    align-self: center;
-}
-
-.menuItems a {
-    font-size: 25px;
-    color: var(--color-textBlack);
-    text-decoration: transparent;
-}
-
-.menuItems a:hover {
-    color: grey;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    transition: color 0.5s ease;
-}
+@media (min-width: 1001px) { .menuItems { transform: translateY(7px); } }
 
 @media screen and (max-width: 1000px) {
-    .title{
-        text-decoration: none;
-    }
-    .stickyBar {
-        background-color: var(--color-text);
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .menu {
-        text-decoration: none;
-        position: absolute;
-        right: 0;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 11px;
-        z-index: 3;
-    }
-
-    .menuBtn {
-        display: block;
-        cursor: pointer;
-    }
-
-    .menuOpen{
-        text-decoration: none;
-    }
-
-    .menuItems {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        gap: 13px;
-        border-radius: 10px;
-        background: white;
-        padding: 24px 33px;
-        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
-    }
+  .menu { position: relative; z-index: 3; height: auto; }
+  .menuToggle { display: grid; }
+  .menuItems { display: none; position: absolute; right: 0; top: 2.8rem; height: auto; flex-direction: column; gap: 0.25rem; min-width: 190px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 1rem; box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28); padding: 0.7rem; }
+  .menuItems li, .menuItems a { height: auto; }
+  .menuItems a { width: 100%; justify-content: center; border-radius: 999px; padding: 0.75rem 0; }
+  .menuItems a:hover { background: transparent; color: var(--color-hover-text); }
 }
 
-.menuOpen {
-    display: flex;
-    z-index: 1;
+.menuOpen { display: flex; }
+@media screen and (max-width: 560px) {
+  .navbar { width: calc(100% - 32px); }
 }

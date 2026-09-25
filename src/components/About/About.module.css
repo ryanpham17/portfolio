@@ -1,144 +1,20 @@
 @import '../../vars.css';
 
-#about {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+#about { position: relative; margin-top: clamp(5rem, 10vw, 10rem); padding: clamp(7rem, 12vw, 11rem) 0 clamp(8rem, 13vw, 12rem); }
+.sectionHeader { padding-top: 1rem; text-align: center; }
+.sectionHeader::before { content: ''; display: block; width: 64px; height: 1px; margin: 0 auto 1rem; background: var(--color-border); }
+.title1 { color: var(--color-accent); font: 0.8rem var(--font-mono); letter-spacing: 0.1em; text-transform: uppercase; }
+.title2 { font-size: clamp(2.4rem, 5vw, 4.5rem); letter-spacing: -0.06em; margin-top: 1.5rem; }
+.aboutContainer { margin-top: 3rem; display: flex; justify-content: center; text-align: center; }
+.aboutDetailsContainer { width: 100%; }
+.mainDetailsContainer { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; max-width: 760px; margin: 0 auto; }
+.detailsContainer { display: none; }
+.textContainer { font-size: 1.05rem; color: var(--color-muted); padding-top: 2rem; max-width: 760px; margin: 0 auto; line-height: 1.9; }
+.detailsContainer1, .detailsContainer2 { line-height: 1.4; padding: 1.5rem; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 1.25rem; text-align: center; transition: border-color 180ms ease, transform 180ms ease; }
+.detailsContainer1:hover, .detailsContainer2:hover { border-color: var(--color-text); transform: translateY(-3px); }
+.experience { font: 0.8rem var(--font-mono); color: var(--color-accent); text-transform: uppercase; margin-bottom: 0.7rem; }
+.experienceDescription { color: var(--color-muted); line-height: 1.6; }
+.sectionContainer { display: flex; flex-direction: column; }
 
-.container {
-    width: 80%;
-    max-width: 1200px;
-}
-
-.title1 {
-    padding-top: 8%;
-    text-align: center;
-}
-
-.title2 {
-    font-size: 3rem;
-    text-align: center;
-}
-
-.aboutContainer {
-    gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    display: flex;
-}
-
-.imageContainer {
-    flex: 0 0 30%;
-    margin-right: 20px; 
-}
-
-.aboutImg {
-    margin-left: 30%;
-    border-radius: 8%;
-    width: 100%;
-    height: auto;
-}
-
-.aboutDetailsContainer {
-    display: relative;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.mainDetailsContainer {
-    padding-top: 6%;
-    display: flex;
-    margin-right:8%
-}
-
-.detailsContainer {
-    align-items: center;
-    margin-right: 18%;
-}
-
-.textContainer {
-    font-size: 110%;
-    padding-top: 4%;
-    text-align: left;
-    align-self: center;
-    margin-left: 18%;
-    width: 60%; 
-    line-height: 1.9;
-}
-
-@media (max-width: 900px) {
-    .title1{
-        padding-top: 120px;
-    }
-    .sectionContainer{
-        padding-top: 20px;
-    }
-    .aboutContainer {
-        flex-direction: column;
-    }
-    .imageContainer {
-        width: 63%;
-        margin-bottom: 20px;
-    }
-    .textContainer {
-        padding-left: 5%;
-        text-align: center;
-    }
-    .mainDetailsContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        justify-content: center; 
-        width: 100%;
-        padding: 0 27px;
-        box-sizing: border-box;
-    }  
-    .detailsContainer1,
-    .detailsContainer2 {
-        width: 100%; 
-        max-width: 300px; 
-        margin-bottom: 20px; 
-        margin-left: 16px;
-        box-sizing: border-box;
-    }
-}
-
-.detailsContainer1 {
-    line-height: 1.4;
-    padding: 1.5rem;
-    flex: 0.4;
-    background: white;
-    border-radius: 2rem;
-    border: rgb(163, 163, 163) 0.2rem solid;
-    text-align: center;
-}
-
-.detailsContainer2 {
-    margin-left: 3%;
-    line-height: 1.4;
-    padding: 1.5rem;
-    flex: 0.4;
-    background: white;
-    border-radius: 2rem;
-    border: rgb(163, 163, 163) 0.2rem solid;
-    text-align: center;
-}
-
-.sectionContainer {
-    display: flex;
-    flex-direction: column;
-    height: 80%;
-}
-
-.educationIcon,
-.experienceIcon {
-    width: 12%;
-    height: auto;
-}
-
-
-
-
+@media (max-width: 700px) { .mainDetailsContainer { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { #about { margin-top: 4rem; padding: 5rem 0 7rem; } .textContainer { font-size: 0.98rem; line-height: 1.75; } }

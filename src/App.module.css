@@ -1,8 +1,18 @@
 @import './vars.css';
 
 .App {
-    background-color: var(--color-text);
+    background-color: var(--color-bg);
     width: 100%;
     height: 100%;
     overflow: hidden;
   }
+
+.App > section { width: min(1120px, calc(100% - 48px)); margin-inline: auto; }
+
+@media (max-width: 900px) {
+  .App > section { width: min(720px, calc(100% - 40px)); }
+}
+
+@media (max-width: 560px) {
+  .App > section { width: calc(100% - 32px); }
+}

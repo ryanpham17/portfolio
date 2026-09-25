@@ -2,9 +2,9 @@
     {
         "title": "Languages",
         "skills": [
+            "C++",
             "Python",
             "Java",
-            "C++",
             "C#",
             "JavaScript",
             "TypeScript",
@@ -14,20 +14,20 @@
     {
         "title": "Frameworks",
         "skills": [
-            "React",
-            "Node.js",
-            "Express.js",
+            "React.js",
             "FastAPI",
-            "Spring Boot"
+            "Node.js",
+            "PyTorch",
+            "F Prime (F')"
         ]
     },
     {
         "title": "Tools & Databases",
         "skills": [
             "Git",
-            "MongoDB",
             "PostgreSQL",
-            "Selenium"
+            "MongoDB",
+            "SQLite"
         ]
     }
 ]

@@ -2,5 +2,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "figtree";
+    font-family: var(--font-figtree);
+    scroll-behavior: smooth;
 }
+:root { background: var(--color-bg); color: var(--color-text); }
+body { background: var(--color-bg); }
+a { color: inherit; }
+h1, h2, h3, h5 { color: var(--color-text); }

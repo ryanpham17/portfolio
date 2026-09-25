@@ -1,92 +1,9 @@
 @import '../../vars.css';
 
-#contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 70vh;
-}
+#contact { margin-top: clamp(5rem, 10vw, 10rem); padding: clamp(7rem, 12vw, 11rem) 0 clamp(7rem, 10vw, 9rem); text-align: center; }
+.spacer { padding-top: 1rem; text-align: center; }
+.spacer::before { content: ''; display: block; width: 64px; height: 1px; margin: 0 auto 1rem; background: var(--color-border); }
+.title2 { font-size: clamp(2.4rem, 5vw, 4.5rem); letter-spacing: -0.06em; margin-top: 1.5rem; }
+.bottomSpacer { height: 6rem; }
 
-.spacer {
-    padding-top: 9%;
-}
-
-.title1 {
-    text-align: center;
-}
-
-.title2 {
-    font-size: 3rem;
-    text-align: center;
-}
-
-.contactContainerOuter {
-    display: flex;
-    justify-content: center;
-    border-radius: 2rem;
-    border: rgb(163, 163, 163) 0.2rem solid;
-    background: (250, 250, 250);
-    margin: 2rem auto;
-    padding: 0.3rem;
-    width: 600px;
-}
-
-.contactContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    margin: 1.64rem;
-}
-
-.contactContainer p {
-    padding-top: 20px;
-    font: var(--font-figtree);
-    font-size: larger;
-    text-decoration: none;
-}
-
-.contactContainer a {
-    text-decoration: none;
-    color: var(--color-textBlack);
-}
-
-.contactContainer a:hover {
-    color: grey;
-    text-underline-offset: 1rem;
-    text-decoration-color: rgb(181, 181, 181);
-    transition: color 0.4s ease, text-decoration-color 0.4s ease;
-}
-
-.icon {
-    cursor: default;
-}
-
-.emailIcon {
-    width: 20%;
-    height: auto;
-}
-
-@media (max-width: 1000px) {
-    .spacer{
-        padding-top: 120px;
-    }
-
-    .contactContainerOuter {
-        flex-direction: column; 
-        width: 90%; 
-    }
-
-    .contactContainer .icon,
-    .contactContainer .emailIcon {
-        width: 55px;
-    }
-}
-
-@media (max-width: 600px) {
-    .contactContainer {
-        flex-direction: column; 
-        align-items: center; 
-    }
-}
+@media (max-width: 560px) { #contact { margin-top: 4rem; padding: 6rem 0 5rem; } .bottomSpacer { height: 4rem; } }

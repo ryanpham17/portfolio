@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './Projects.module.css';
 import './cards.css';
 import { getImageURL } from '../../utils';
@@ -10,8 +9,8 @@ export const Projects = () => {
   return (
     <section id="projects">
       <div className={styles.spacer}>
-        <p className={styles.title1}>Check Out My Recent</p>
-        <h1 className={styles.title2}>Projects</h1>
+        <p className={styles.title1}>03 / Projects</p>
+        <h1 className={styles.title2}>Selected projects.</h1>
       </div>
       <div className={styles.cardContainer}>
         {cardArr.map((eachCard, index) => (
