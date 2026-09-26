@@ -7,6 +7,7 @@ export const Contact = () => {
         <h1 className={styles.title2}>Let&apos;s connect.</h1>
     </div>
     <div className={styles.bottomSpacer} aria-hidden="true" />
+    <p className={styles.footer}>© 2026 Ryan Pham</p>
     </section>
   )
 }
