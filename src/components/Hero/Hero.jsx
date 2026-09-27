@@ -18,7 +18,7 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-        <p className={styles.description}>Software engineer focused on AI/ML, full-stack development, and embedded systems.</p>
+        <p className={styles.description}>Software Engineer with a focus on AI/ML, computer vision, full-stack development, and embedded systems, building intelligent and scalable software across the stack.</p>
         <div className={styles.BtnContainer}>
           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ryandphambusiness@gmail.com" target="_blank" rel="noopener noreferrer" className={styles.contactBtn}>Contact Me</a>
           <a href={Pdf} target="_blank" rel="noopener noreferrer" className={styles.contactBtn}>Resume</a>
